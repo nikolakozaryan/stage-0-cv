@@ -6,14 +6,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
     <link rel="stylesheet" href="style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/519a8f3a27.js" crossorigin="anonymous"></script>
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="highlight/styles/default.min.css">
+    <script src="highlight/highlight.min.js"></script>
     <title>Nikolay Kozyrev</title>
 </head>
 <body>
     <div class="global_container">
-        <header></header>
-        <main></main>
-        <aside></aside>
-        <footer></footer>
+        <header>
+            <div class="header_headings">
+                <h1>Nikolay Kozyrev</h1>
+                <h2>Junior Software Engineer</h2>
+            </div>
+            <div class="header_image">
+                <img src="assets/favicon/android-chrome-192x192.png" alt="avatar">
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="nav_a" href="#">ABOUT</a></li>
+                    <li><a class="nav_a" href="#">EDUCATION</a></li>
+                    <li><a class="nav_a" href="#">EXPERIENCE</a></li>
+                    <li><a class="nav_a" href="#">PROJECTS</a></li>
+                    <li><a class="nav_a" href="#">CODE</a></li>
+                    <li><a class="nav_a" href="#">SKILLS</a></li>
+                    <li><a class="nav_a" href="#">LANGUAGES</a></li>
+                    <li><a class="nav_a" href="#">CONTACTS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h3 class="main_section_header">ABOUT</h3>
+                <div class="section-content">
+                    <p>I came to the RS School to learn new things and develop my coding skills!</p>
+                    <blockquote>
+                        "Per aspera ad astra!", <cite>Lucius Annaeus Seneca</cite>
+                    </blockquote>
+                </div>
+            </section>
+            <section>
+                <h3 class="main_section_header">EDUCATION</h3>
+                <div class="section-content">
+                    <b>BSUIR (2017)</b>
+                    <p>Faculty of Infocommunications (Information Security in Telecommunications).</p>
+                </div>
+            </section>
+            <section>
+                <h3 class="main_section_header">EXPERIENCE</h3>
+                <div class="section-content">
+                    <div class="experience-item">
+                        <div class="experience-item-heading">The Web Developer Bootcamp 2021</div>
+                        <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" title="Udemy: Web Developer Bootcamp 2021" target="_blank">Udemy</a>
+                      </div>
+                      <div class="experience-item">
+                        <div class="experience-item-heading">Responsive Web Design</div>
+                        <a href="https://www.freecodecamp.org/learn/responsive-web-design/" title="freeCodeCamp" target="_blank">freeCodeCamp</a>
+                      </div>
+                      <div class="experience-item">
+                        <div class="experience-item-heading">CS50</div>
+                        <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x?index=product&queryID=c747bb75255757813c9e7f0bb2717b5d&position=1" title="edX-CS50" target="_blank">edX</a>
+                      </div>
+                      <div class="experience-item">
+                        <div class="experience-item-heading">The Modern JavaScript Tutorial</div>
+                        <a href="https://learn.javascript.ru/" title="learn.javascript.ru" target="_blank">javascript.ru</a>
+                      </div>
+                </div>
+            </section>
+            <section>
+                <h3 class="main_section_header">PROJECTS</h3>
+                <div class="section-content"></div>
+            </section>
+            <section>
+                <h3 class="main_section_header">CODE</h3>
+                <div class="section-content">
+                    <div>Example of code. The solution of codewars' task "Multiples of 3 or 5".</div>
+                    <div class="code">
+                      <pre>
+          <code>
+            function solution(number){
+              let sum = 0;
+              for(let i = 3; i > number; i++) {
+                if( i % 3 === 0 || i % 5 === 0 ) sum += i;
+              }
+              return sum;
+            }
+          </code>
+                      </pre>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <section class="aside-section" id="skills">
+                <h2>Skills</h2>
+                <div id="skills-content">
+                  <ul>
+                    <li class="skill-item"><i class="fab fa-html5" title="HTML5"></i></li>
+                    <li class="skill-item"><i class="fab fa-css3-alt" title="CSS3"></i></li>
+                    <li class="skill-item"><i class="fab fa-js-square" title="JavaScript"></i></li>
+                    <li class="skill-item"><i class="fas fa-database" title="MySQL"></i></li>
+                    <li class="skill-item"><i class="fas fa-code-branch" title="Git"></i></li>
+                  </ul>
+                </div>
+              </section>
+        
+              <section class="aside-section" id="languages">
+                <h2>Languages</h2>
+                <div id="languages-content">
+                  <div class="language-item">
+                    <h4>Russian</h4>
+                    <div class="language-level">native speaker</div>
+                  </div>
+                  <div class="language-item">
+                    <h4>Belarusian</h4>
+                    <div class="language-level">intermediate</div>
+                  </div>
+                  <div class="language-item">
+                    <h4>English</h4>
+                    <div class="language-level">intermediate</div>
+                  </div>
+                </div>
+              </section>
+        
+              <section class="aside-section" id="contacts">
+                <h2>My contacts</h2>
+                <div id="contacts-content">
+                  <ul>
+                    <li><a href="tel:+375447749054" title="+375447749054"><i class="fas fa-phone-square-alt"></i></a></li>
+                    <li><a href="mailto:kolyak770@gmail.com" title="kolyak770@gmail.com"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://t.me/nikolay_kozyrev" title="Telegram" target="_blank"><i class="fab fa-telegram"></i></a></li>
+                    <li><a href="https://github.com/nikolakozaryan" title="GitHub" target="_blank"><i class="fab fa-github"></i></a></li>
+                  </ul>
+                </div>
+              </section>
+        </aside>
+        <footer>
+            <div>rsimg</div>
+            <div>2021</div>
+            <div><a href="#">nk</a></div>
+        </footer>
     </div>
 </body>
 </html>
