@@ -1,0 +1,103 @@
+:root {
+    --font-color: #13347b;
+    --header-bg-color: #80e0ab;
+    --nav-footer-bg-color: #C6E2E9;
+    --aside-bg-color: #F1FFC4;
+    --link-hover-color: #fcd2d9;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    padding: 20px 0;
+}
+
+.global_container {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Nanum Gothic', sans-serif;
+    box-shadow: 0 0 1.5em .4em #c2c2c2;
+    color: var(--font-color);
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+header {
+    width: 100%;
+    background: var(--header-bg-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header_headings {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background: var(--nav-footer-bg-color);
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+}
+
+nav ul li {
+    width: calc(100%/8);
+    height: 100%;
+}
+
+nav ul li a {
+    display: block;
+    height: 100%;
+    text-align: center;
+    font-weight: bold;
+    transition: .5s;
+}
+
+nav ul li a:hover {
+    background: var(--header-bg-color);
+}
+
+main {
+    width: 70%;
+}
+
+aside {
+    width: 30%;
+    background: var(--aside-bg-color);
+}
+
+footer {
+    width: 100%;
+    background: var(--nav-footer-bg-color);
+    display: flex;
+    justify-content: space-between;
+}
