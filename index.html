@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
+    <link rel="stylesheet" href="RESET.css">
     <link rel="stylesheet" href="style.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,13 +14,13 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/519a8f3a27.js" crossorigin="anonymous"></script>
     <!-- highlight.js -->
-    <link rel="stylesheet" href="highlight/styles/default.min.css">
-    <script src="highlight/highlight.min.js"></script>
+    <link rel="stylesheet" href="assets/highlight/styles/default.min.css">
+    <script src="assets/highlight/highlight.min.js"></script>
     <title>Nikolay Kozyrev</title>
 </head>
 <body>
     <div class="global_container">
-        <header>
+        <header id="header">
             <div class="header_headings">
                 <h1>Nikolay Kozyrev</h1>
                 <h2>Junior Software Engineer</h2>
@@ -29,19 +30,19 @@
             </div>
             <nav>
                 <ul>
-                    <li><a class="nav_a" href="#">ABOUT</a></li>
-                    <li><a class="nav_a" href="#">EDUCATION</a></li>
-                    <li><a class="nav_a" href="#">EXPERIENCE</a></li>
-                    <li><a class="nav_a" href="#">PROJECTS</a></li>
-                    <li><a class="nav_a" href="#">CODE</a></li>
-                    <li><a class="nav_a" href="#">SKILLS</a></li>
-                    <li><a class="nav_a" href="#">LANGUAGES</a></li>
-                    <li><a class="nav_a" href="#">CONTACTS</a></li>
+                    <li><a class="nav_a" href="#about">ABOUT</a></li>
+                    <li><a class="nav_a" href="#education">EDUCATION</a></li>
+                    <li><a class="nav_a" href="#experience">EXPERIENCE</a></li>
+                    <li><a class="nav_a" href="#projects">PROJECTS</a></li>
+                    <li><a class="nav_a" href="#code">CODE</a></li>
+                    <li><a class="nav_a" href="#skills">SKILLS</a></li>
+                    <li><a class="nav_a" href="#languages">LANGUAGES</a></li>
+                    <li><a class="nav_a" href="#contacts">CONTACTS</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <section>
+            <section id="about">
                 <h3 class="main_section_header">ABOUT</h3>
                 <div class="section-content">
                     <p>I came to the RS School to learn new things and develop my coding skills!</p>
@@ -50,53 +51,70 @@
                     </blockquote>
                 </div>
             </section>
-            <section>
+            <section id="education">
                 <h3 class="main_section_header">EDUCATION</h3>
                 <div class="section-content">
-                    <b>BSUIR (2017)</b>
+                    <span id="university">BSUIR (2017)</span>
                     <p>Faculty of Infocommunications (Information Security in Telecommunications).</p>
                 </div>
             </section>
-            <section>
+            <section id="experience">
                 <h3 class="main_section_header">EXPERIENCE</h3>
                 <div class="section-content">
                     <div class="experience-item">
                         <div class="experience-item-heading">The Web Developer Bootcamp 2021</div>
-                        <a href="https://www.udemy.com/course/the-web-developer-bootcamp/" title="Udemy: Web Developer Bootcamp 2021" target="_blank">Udemy</a>
+                        <a class="experience-href" href="https://www.udemy.com/course/the-web-developer-bootcamp/" title="Udemy: Web Developer Bootcamp 2021" target="_blank">Udemy</a>
                       </div>
                       <div class="experience-item">
                         <div class="experience-item-heading">Responsive Web Design</div>
-                        <a href="https://www.freecodecamp.org/learn/responsive-web-design/" title="freeCodeCamp" target="_blank">freeCodeCamp</a>
+                        <a class="experience-href" href="https://www.freecodecamp.org/learn/responsive-web-design/" title="freeCodeCamp" target="_blank">freeCodeCamp</a>
                       </div>
                       <div class="experience-item">
                         <div class="experience-item-heading">CS50</div>
-                        <a href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x?index=product&queryID=c747bb75255757813c9e7f0bb2717b5d&position=1" title="edX-CS50" target="_blank">edX</a>
+                        <a class="experience-href" href="https://www.edx.org/course/introduction-computer-science-harvardx-cs50x?index=product&queryID=c747bb75255757813c9e7f0bb2717b5d&position=1" title="edX-CS50" target="_blank">edX</a>
                       </div>
                       <div class="experience-item">
                         <div class="experience-item-heading">The Modern JavaScript Tutorial</div>
-                        <a href="https://learn.javascript.ru/" title="learn.javascript.ru" target="_blank">javascript.ru</a>
+                        <a class="experience-href" href="https://learn.javascript.ru/" title="learn.javascript.ru" target="_blank">javascript.ru</a>
                       </div>
                 </div>
             </section>
-            <section>
+            <section id="projects">
                 <h3 class="main_section_header">PROJECTS</h3>
-                <div class="section-content"></div>
+                <div class="section-content">
+                  <a href="https://codepen.io/nikolakozaryan/details/abyvwyY" class="projects-item" target="_blank">
+                    <div class="projects-item-image"><img class="project-img" src="assets/projects/tribute page.jpg" alt="tribute page img"></div>
+                    <div class="projects-item-name"><span class="bracket"><i class="fas fa-chevron-left"></i></span> Tribute Page <span class="bracket"><i class="fas fa-chevron-right"></i></span></div>
+                  </a>
+                  <a href="https://codepen.io/nikolakozaryan/pen/KKvMmPy" class="projects-item" target="_blank">
+                    <div class="projects-item-image"><img class="project-img" src="assets/projects/JS documnetation.jpg" alt="js documentation img"></div>
+                    <div class="projects-item-name"><span class="bracket"><i class="fas fa-chevron-left"></i></span> JS Documentation <span class="bracket"><i class="fas fa-chevron-right"></i></span></div>
+                  </a>
+                  <a href="https://codepen.io/nikolakozaryan/pen/eYEZxdb" class="projects-item" target="_blank">
+                    <div class="projects-item-image"><img class="project-img" src="assets/projects/product page.jpg" alt="product page img"></div>
+                    <div class="projects-item-name"><span class="bracket"><i class="fas fa-chevron-left"></i></span> Product Page <span class="bracket"><i class="fas fa-chevron-right"></i></span></div>
+                  </a>
+                  <a href="https://codepen.io/nikolakozaryan/details/LYjGPeW" class="projects-item" target="_blank">
+                    <div class="projects-item-image"><img class="project-img" src="assets/projects/adaptive form.jpg" alt="adaptive form img"></div>
+                    <div class="projects-item-name"><span class="bracket"><i class="fas fa-chevron-left"></i></span> Adaptive Form <span class="bracket"><i class="fas fa-chevron-right"></i></span></div>
+                  </a>
+                </div>
             </section>
-            <section>
+            <section id="code">
                 <h3 class="main_section_header">CODE</h3>
                 <div class="section-content">
                     <div>Example of code. The solution of codewars' task "Multiples of 3 or 5".</div>
                     <div class="code">
                       <pre>
-          <code>
-            function solution(number){
-              let sum = 0;
-              for(let i = 3; i > number; i++) {
-                if( i % 3 === 0 || i % 5 === 0 ) sum += i;
-              }
-              return sum;
-            }
-          </code>
+                <code>
+                  function solution(number){
+                    let sum = 0;
+                    for(let i = 3; i > number; i++) {
+                      if( i % 3 === 0 || i % 5 === 0 ) sum += i;
+                    }
+                    return sum;
+                  }
+                </code>
                       </pre>
                     </div>
                 </div>
@@ -147,10 +165,14 @@
               </section>
         </aside>
         <footer>
-            <div><img src="assets/rs_logo.svg" alt="rsschool logo"></div>
+            <div><a href="https://rs.school/" target="_blank" rel="noopener noreferrer" title="rs-school"><img src="assets/rs_logo.svg" alt="rsschool logo"></a></div>
             <div>2021</div>
-            <div><a href="https://github.com/nikolakozaryan" target="_blank">NK</a></div>
+            <div><a href="https://github.com/nikolakozaryan" target="_blank" title="github">NK</a></div>
         </footer>
     </div>
+    <div class="to-the-top">
+      <a href="#header"><i class="fas fa-long-arrow-alt-up"></i></a>
+    </div>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
