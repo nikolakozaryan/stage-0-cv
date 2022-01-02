@@ -348,6 +348,13 @@ footer div {
   background: var(--nav-footer-bg-color);
 }
 
+.avatar {
+  max-width: 70%;
+  height: auto;
+  border: 10px solid var(--aside-bg-color);
+  border-radius: 50%;
+}
+
 @media (max-width: 1224px) {
   .burger {
     position: absolute;
@@ -453,6 +460,10 @@ footer div {
   .active-nav {
     left: 0;
   }
+
+  .avatar {
+    border: 7px solid var(--aside-bg-color)
+  }
 }
 
 @media (max-width: 768px) {
@@ -492,12 +503,8 @@ footer div {
   #experience .section-content {
     grid-template-columns: 1fr;
   }
-}
 
-
-.avatar {
-  max-width: 70%;
-  height: auto;
-  border: 10px solid var(--aside-bg-color);
-  border-radius: 50%;
+  .avatar {
+    border: 5px solid var(--aside-bg-color)
+  }
 }
